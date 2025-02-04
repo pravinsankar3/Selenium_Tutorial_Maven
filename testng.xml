@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="org.example.testNG.ListenersExample"></listener>
+    </listeners>
+    <test name="Test cases">
+        <classes>
+            <class name="org.example.testNG.Skip"></class>
+        </classes>
+    </test>
+</suite>
+
+
+        <!--<class name="org.example.testNG.sampleFirstTestcase"/>
+                    <class name="org.example.testNG.DependencyHandling"></class>
+                    <class name="org.example.testNG.Priority"></class>
+                    <class name="org.example.testNG.TestSuitWriting"></class>-->
