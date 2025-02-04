@@ -2,17 +2,23 @@ package org.example.javaPrograms;
 
 public class test1 {
 
-    public static void revSentence(String s) {
-        String[] ns = s.split(" ");
-        String rev = "";
-        for (int i = ns.length - 1; i >= 0; i--) {
-            rev = rev + ns[i] + " ";
-        }
-        System.out.println("Reversed sentence is: " + rev);
+    public static void main(String[] args) {
+        int[] a = {2, 4, 6, 3, 8};
+        secLargest(a);
     }
 
-    public static void main(String[] args) {
-        String s = "I like the view";
-        revSentence(s);
+    public static void secLargest(int[] a) {
+        int lar = Integer.MIN_VALUE;
+        int sec = Integer.MIN_VALUE;
+
+        for (int b : a) {
+            if (b > lar) {
+                sec = lar;
+                lar = b;
+            } else if (b > sec) {
+                sec = b;
+            }
+        }
+        System.out.println("Second largest number in the array is: " + sec);
     }
 }
