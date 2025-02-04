@@ -6,6 +6,7 @@ public class revWordsInSentence {
     public static void revTheSentence(String given) {
         String[] s = given.split(" ");
         String rev = "";
+
         for (int i = s.length - 1; i >= 0; i--) {
             rev = rev + s[i] + " ";
         }
