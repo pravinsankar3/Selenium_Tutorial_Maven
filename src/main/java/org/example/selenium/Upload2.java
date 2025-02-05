@@ -7,16 +7,16 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 public class Upload2 {
     public static void main(String[] args) throws InterruptedException {
-        // Set the WebDriver path correctly
+// Set the WebDriver path correctly
         System.setProperty("webdriver.edge.driver", "C:\\Users\\PRAVINR\\Downloads\\Web Drivers\\msedgedriver.exe");
         WebDriver driver = new EdgeDriver();
         driver.get("https://www.tutorialspoint.com/selenium/practice/upload-download.php");
 
-        // Find the file input element and directly upload the file
+// Find the file input element and directly upload the file
         WebElement uploadInput = driver.findElement(By.id("uploadFile"));
         System.out.println("Before uploading the file");
 
-        // Directly sending the file path to the input element
+// Directly sending the file path to the input element
         String filePath = "C:\\Users\\PRAVINR\\Downloads\\sampleFile.jpeg";
         uploadInput.sendKeys(filePath);
 
