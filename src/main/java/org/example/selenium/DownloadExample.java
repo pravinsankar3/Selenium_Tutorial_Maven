@@ -19,7 +19,7 @@ public class DownloadExample {
         downloadButton.click();
 
         Thread.sleep(2500);
-
+// Getting the file location to check if the file is downloaded
         File fileLocation = new File("C:\\Users\\PRAVINR\\Downloads");
         File[] totalFiles = fileLocation.listFiles();
 
