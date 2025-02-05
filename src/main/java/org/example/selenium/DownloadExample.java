@@ -23,7 +23,7 @@ public class DownloadExample {
         File fileLocation = new File("C:\\Users\\PRAVINR\\Downloads");
         File[] totalFiles = fileLocation.listFiles();
 
-        //to verify if the download is successful (through code)
+// to verify if the download is successful (through code)
         for(File file: totalFiles)
         {
             if (file.getName().equals("sampleFile.jpeg")) {
