@@ -30,6 +30,6 @@ public class refresh {
 // Using F5
         Robot robot = new Robot();
         robot.keyPress(KeyEvent.VK_F5);
-        robot.keyPress(KeyEvent.VK_F5);
+        robot.keyRelease(KeyEvent.VK_F5);
     }
 }
