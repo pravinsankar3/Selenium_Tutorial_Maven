@@ -15,8 +15,8 @@ public class DownloadExample {
         WebDriver driver = new EdgeDriver();
         driver.get("https://www.tutorialspoint.com/selenium/practice/upload-download.php");
 
-        WebElement downlaodButton = driver.findElement(By.id("downloadButton"));
-        downlaodButton.click();
+        WebElement downloadButton = driver.findElement(By.id("downloadButton"));
+        downloadButton.click();
 
         Thread.sleep(2500);
 
